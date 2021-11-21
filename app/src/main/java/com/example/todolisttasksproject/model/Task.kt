@@ -1,6 +1,6 @@
 package com.example.todolisttasksproject.model
 
-data  class Task(val stringRecourceId:Int) {
+data  class Task(val stringRecourceId: String) {
 
 
 

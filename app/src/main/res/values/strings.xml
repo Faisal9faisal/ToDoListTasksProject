@@ -5,6 +5,8 @@
     <string name="task3">task3</string>
     <string name="task4">task4</string>
     <string name="task5">task5</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

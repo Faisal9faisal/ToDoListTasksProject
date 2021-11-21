@@ -1,12 +1,14 @@
 package com.example.todolisttasksproject.adapter
 
 import android.content.Context
+import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.todolisttasksproject.R
+import com.example.todolisttasksproject.data.dataSource
 import com.example.todolisttasksproject.model.Task
 
 class ItemAdapter(
@@ -31,7 +33,7 @@ class ItemAdapter(
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
-        holder.textView.text =  context.resources.getString(item.stringRecourceId)
+        holder.textView.text = context.resources.getString(item.stringRecourceId).toString()
 
     }
 
@@ -42,3 +44,7 @@ class ItemAdapter(
 
 
 }
+
+private fun Resources.getString(stringRecourceId: String) {}
+
+
